@@ -1,19 +1,22 @@
 // 1
-// 2 2
-// 3 3 3
-// 4 4 4 4
-
+// * *
+// 2 2 2
+// * * * *
 
 #include <stdio.h>
 
-int main() {
+void main() {
+    int num;
+    scanf("%d", &num);
 
-    for(int i = 1; i <= 4; i++) {
+    for(int i = 1; i <= num; i++) {
         for(int j = 1; j <= i; j++) {
-            printf("%d ", i);
+            if(i % 2 == 0) {
+                printf("* ");
+            } else {
+                printf("%d ", (i / 2) + 1);
+            }
         }
         printf("\n");
     }
-
-    return 0;
 }
