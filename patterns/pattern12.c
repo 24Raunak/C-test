@@ -1,22 +1,23 @@
-// 1
-// * *
-// 2 2 2
-// * * * *
+// *       *
+//   *   *
+//     *
+//   *   * 
+// *       *
 
 #include <stdio.h>
 
-int main() {
-    
-    for(int i = 1; i <= 4; i++) {
-        for(int j = 1; j <= i; j++) {
-            if(i % 2 == 0) {
-                printf("* ");
-            } else {
-                printf("%d ", (i / 2) + 1);
-            }
-        }
-        printf("\n");
-    }
+void main() {
+	int num;
+	scanf("%d", &num);
 
-    return 0;
+	for(int i = 1; i <= num; i++) {
+		for(int j = 1; j <= num; j++) {
+			if(i == j || (i + j) == num + 1) {
+				printf("* ");
+			} else {
+				printf("  ");
+			}
+		}
+		printf("\n");
+	}
 }
