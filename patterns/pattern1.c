@@ -4,15 +4,14 @@
 
 #include <stdio.h>
 
-int main() {
-    
-    for(int i = 0; i < 3; i++) {
-        for(int j = 0; j < 3; j++) {
+void main() {
+    int num;
+    scanf("%d", &num);
+
+    for(int i = 1; i <= num; i++) {
+        for(int j = 1; j <= num; j++) {
             printf("* ");
         }
         printf("\n");
     }
-
-    return 0;
-
 }
