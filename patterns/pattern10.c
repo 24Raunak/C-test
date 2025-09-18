@@ -1,16 +1,17 @@
 // 1
-// 2 3
-// 4 5 6
-// 7 8 9 10
+// 2 2
+// 3 3 3
+// 4 4 4 4
 
 #include <stdio.h>
 
 void main() {
-    int num = 1;
-    for(int i = 0; i < 4; i++) {
-        for(int j = 0; j <= i; j++) {
-            printf("%d ", num);
-            num += 1;
+    int num;
+    scanf("%d", &num);
+
+    for(int i = 1; i <= num; i++) {
+        for(int j = 1; j <= i; j++) {
+            printf("%d ", i);
         }
         printf("\n");
     }
