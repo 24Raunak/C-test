@@ -16,5 +16,5 @@ void main() {
     scanf("%d", &timePeriod);
 
     simpleInterest = (principal * rate * timePeriod) / 100;
-    printf("\nThe simple interest is %f", simpleInterest);
+    printf("\nThe simple interest is %.2f", simpleInterest);
 }
