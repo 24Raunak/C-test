@@ -1,14 +1,12 @@
-// Counting Program
+// Program to count till a specific number
 
 #include <stdio.h>
-int main() {
-    int i, num;
-    printf("Till which number do you want the program to count to?\n");
-    scanf("%d", &i);
 
-    for(num = 1; num <= i; num++) {
-        printf("%d ", num);
+void main() {
+    int num;
+    scanf("%d", &num);
+
+    for(int i = 1; i <= num; i++) {
+        printf("%d ", i);
     }
-
-    return 0;
 }
