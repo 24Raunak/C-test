@@ -1,16 +1,12 @@
-// Multiplication Table
+// Program to calculate multiplication table
 
 #include <stdio.h>
-int main() {
-    int i, j, x;
-    printf("Enter the number whose multiplication table you want ");
-    scanf("%d", &x);
 
-    for(i = x ; i <= x; i++) {
-        for(j = 1; j <= 10; j++) {
-            printf("%d x %d = %d\n", x, j, i * j);
-        }
+void main() {
+    int num;
+    scanf("%d", &num);
+
+    for(int i = 1 ; i <= 10; i++) {
+        printf("%d x %d = %d\n", num, i, num * i);
     }
-
-    return 0;
 }
