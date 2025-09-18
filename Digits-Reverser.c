@@ -1,17 +1,15 @@
-// Digits Reverser
+// Program to reverse digits of a number
 
 #include <stdio.h>
-int main() {
-    int num, revNum;
-    revNum = 0;
-    printf("Enter the number whose digits are to be reversed ");
+
+void main() {
+    int num;
     scanf("%d", &num);
 
-    while(num) {
-        revNum = revNum * 10 + num % 10;
+    int revNum = 0;
+    while(num > 0) {
+        revNum = (revNum * 10) + num % 10;
         num /= 10;
     }
     printf("%d", revNum);
-
-    return 0;
 }
