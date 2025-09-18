@@ -1,21 +1,20 @@
+// Program to calculate simple interest
+
 #include <stdio.h>
 
-int main() {
-    int p,t;
-    float r,si;
+void main() {
+    int principal, timePeriod;
+    float rate, simpleInterest;
 
     printf("Enter your principal amount\n");
-    scanf("%d", &p);
+    scanf("%d", &principal);
 
     printf("\nEnter your rate of interest\n");
-    scanf("%f", &r);
+    scanf("%f", &rate);
 
     printf("\nEnter your time period\n");
-    scanf("%d", &t);
+    scanf("%d", &timePeriod);
 
-    si=p*r*t/100;
-
-    printf("\nThe total simple interest for that time period will be %f", si);
-
-    return 0;
+    simpleInterest = (principal * rate * timePeriod) / 100;
+    printf("\nThe simple interest is %f", simpleInterest);
 }
