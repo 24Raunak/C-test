@@ -29,8 +29,8 @@ int main() {
                 a = i + 1;
             }
         }
-
         printf("\n");
     }
+
 	return 0;
 }

@@ -7,7 +7,6 @@
  // 1234567
 
 #include<stdio.h>
-
 int main() {
 	int num;
 	scanf("%d", &num);

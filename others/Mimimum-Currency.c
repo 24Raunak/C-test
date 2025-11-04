@@ -1,9 +1,10 @@
+// Program that displays the amount of notes in denominations Rs 1, 2, 5, 10, 50, 100 for a specific amount
+
 #include <stdio.h>
 #include <math.h>
-
 int main() {
     int amount, nohun, nofifty, noten, nofive, notwo, noone, total;
-    printf("Enter any amount and this program will display the minimum amount of notes required in denominations Rs1,2,5,10,50,100 to have it:\n ");
+    printf("Enter the amount:\n ");
     scanf("%d", &amount);
 
     nohun = amount / 100;
@@ -21,7 +22,7 @@ int main() {
 
     total = nohun + nofifty + noten + nofive + notwo + noone;
 
-    printf("The mininmum amount of notes to have this amount is %d", total);
+    printf("The mininmum amount of notes needed to have this amount is %d", total);
 
     return 0;
 }

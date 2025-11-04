@@ -7,8 +7,7 @@
 //       *
 
 #include <stdio.h>
-
-void main() {
+int main() {
     int num;
     scanf("%d", &num);
 
@@ -32,4 +31,6 @@ void main() {
         }
         printf("\n");
     }
+
+    return 0;
 }

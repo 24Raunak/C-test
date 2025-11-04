@@ -1,8 +1,7 @@
 // Program to reverse digits of a number
 
 #include <stdio.h>
-
-void main() {
+int main() {
     int num;
     scanf("%d", &num);
 
@@ -12,4 +11,6 @@ void main() {
         num /= 10;
     }
     printf("%d", revNum);
+
+    return 0;
 }

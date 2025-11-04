@@ -1,8 +1,7 @@
-// Program to calculate sum of digits of a number
+// Program to calculate the sum of digits of a number
 
 #include <stdio.h>
-
-void main() {
+int main() {
     int num;
     scanf("%d", &num);
 
@@ -13,4 +12,6 @@ void main() {
     }
 
     printf("%d", digitSum);
+
+    return 0;
 }

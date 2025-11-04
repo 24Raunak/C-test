@@ -1,11 +1,12 @@
+// Program to calculate the areas of 
+
 #include <stdio.h>
 #include <math.h>
-
 int main() {
     int choice;
     float length, breadth, side, radius, area;
 
-    printf("\nArea/Volume Calculator Program\nEnter 1 for Rectangle, 2 for Square, 3 for Circle:-\n");
+    printf("Area/Volume Calculator Program\nEnter 1 for Rectangle, 2 for Square, 3 for Circle:-\n");
     scanf("%d", &choice);
 
     if(choice == 1) {

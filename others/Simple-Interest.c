@@ -1,8 +1,7 @@
 // Program to calculate simple interest
 
 #include <stdio.h>
-
-void main() {
+int main() {
     int principal, timePeriod;
     float rate, simpleInterest;
 
@@ -17,4 +16,6 @@ void main() {
 
     simpleInterest = (principal * rate * timePeriod) / 100;
     printf("\nThe simple interest is %.2f", simpleInterest);
+
+    return 0;
 }
