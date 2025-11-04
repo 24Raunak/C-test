@@ -2,11 +2,12 @@
 
 #include <stdio.h>
 int main() {
-    int num;
+    int i = 1, num;
     scanf("%d", &num);
 
-    for(int i = 1; i <= num; i++) {
+    while(i <= num) {
         printf("%d ", i);
+        i++;
     }
 
     return 0;
