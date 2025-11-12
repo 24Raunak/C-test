@@ -4,10 +4,7 @@
 // * * * *
 
 #include <stdio.h>
-int main() {
-    int num;
-    scanf("%d", &num);
-
+void hollow_square_2(int num) {
     for(int i = 1; i <= num; i++) {
         for(int j = 1; j <= num; j++) {
             if(i == 1 || i == num || j == 1 || j == num || i == j) {
@@ -18,6 +15,11 @@ int main() {
         }
         printf("\n");
     }
+}
+int main() {
+    int num;
+    scanf("%d", &num);
+    hollow_square_2(num);
 
     return 0;
 }

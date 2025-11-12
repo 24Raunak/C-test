@@ -4,18 +4,20 @@
 // 7 8 9 10
 
 #include <stdio.h>
-int main() {
-    int num;
-    scanf("%d", &num);
-
-    int x = 1;
+void floyd_triangle(int num) {
+    int a = 1;
     for(int i = 1; i <= num; i++) {
         for(int j = 1; j <= i; j++) {
-            printf("%d ", x);
-            x++;
+            printf("%d ", a);
+            a++;
         }
         printf("\n");
     }
+}
+int main() {
+    int num;
+    scanf("%d", &num);
+    floyd_triangle(num);
 
     return 0;
 }

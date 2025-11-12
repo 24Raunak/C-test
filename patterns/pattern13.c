@@ -4,10 +4,7 @@
 // 4 5 6 7 6 5 4
 
 #include<stdio.h>
-int main() {
-    int num;
-    scanf("%d", &num);
-
+void palindromic_number_pyramid(int num) {
     int a = 1;
     for(int i = 1; i <= num; i++) {
         int b = (i * 2 - 2);
@@ -31,6 +28,11 @@ int main() {
         }
         printf("\n");
     }
+}
+int main() {
+    int num;
+    scanf("%d", &num);
+    palindromic_number_pyramid(num);
 
 	return 0;
 }

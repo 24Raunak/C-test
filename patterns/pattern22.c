@@ -4,10 +4,7 @@
 //             *
 
 #include <stdio.h>
-int main() {
-    int num;
-    scanf("%d", &num);
-
+void descending_star_triangle(int num) {
     for(int i = 1; i <= num; i ++) {
         for(int j = 1; j <= num; j++) {
             if(i <= j) {
@@ -18,6 +15,11 @@ int main() {
         }
         printf("\n");
     }
+}
+int main() {
+    int num;
+    scanf("%d", &num);
+    descending_star_triangle(num);
 
     return 0;
 }

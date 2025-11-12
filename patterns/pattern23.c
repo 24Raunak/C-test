@@ -7,10 +7,7 @@
 // *
 
 #include <stdio.h>
-int main() {
-    int num;
-    scanf("%d", &num);
-
+void left_aligned_pyramid(int num) {
     for(int i = 1; i <= (2 * num - 1); i++) {
         if(i <= num) {
             for(int j = 1; j <= i; j++) {
@@ -23,6 +20,11 @@ int main() {
         }
         printf("\n");
     }
+}
+int main() {
+    int num;
+    scanf("%d", &num);
+    left_aligned_pyramid(num);
 
     return 0;
 }

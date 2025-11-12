@@ -6,10 +6,7 @@
 // 100001
 
 #include<stdio.h>
-int main() {
-	int num;
-	scanf("%d", &num);
-	
+void binary_pyramid_pattern(int num) {
 	for(int i = 1; i <= num; i++) {
 		for(int j = 1; j <= i; j++) {
 			if(i % 2 == 0) {
@@ -24,6 +21,11 @@ int main() {
 		}
 		printf("\n");
 	}
+}
+int main() {
+	int num;
+	scanf("%d", &num);
+	binary_pyramid_pattern(num);
 
 	return 0;
 }
