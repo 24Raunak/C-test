@@ -20,7 +20,7 @@ void diagonal_cross_2(int num) {
 int main() {
 	int num;
 	scanf("%d", &num);
-	diagonal_cross_2(num);
+	diagonal_cross_2(num);	
 
 	return 0;
 }
