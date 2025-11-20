@@ -12,7 +12,7 @@ void palindromic_number_pyramid(int num) {
             if (j <= num) {
                 if((i + j) >= (num + 1)) {
                     printf("%d\t", a);
-                    a ++;
+                    a++;
                 } else {
                     printf("\t");
                 }
