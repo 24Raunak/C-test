@@ -2,13 +2,12 @@
 
 #include <stdio.h>
 void fibonacci(int num) {
-	int x;
 	int initial = 1;
 	int lastNum = 0;
 	for(int i = 0; i < num; i++) {
-        x = initial;
+        int temp = initial;
 		initial += lastNum;
-		lastNum = x;
+		lastNum = temp;
 	}
 
     printf("%d", lastNum);
